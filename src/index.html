@@ -59,11 +59,14 @@
 
       <div class="form-section">
         <h2>Register as a Dog Walker</h2>
-        <form action="/register_dog_walker" method="GET">
+        <form
+          action="https://waqqly-web-app-functions.azurewebsites.net/api/createwalker"
+          method="GET"
+        >
           <div>
             <input
               type="text"
-              name="walkers_name"
+              name="walkersname"
               placeholder="WALKER'S NAME"
               required
             />
@@ -71,7 +74,7 @@
           <div>
             <input
               type="text"
-              name="walkers_location"
+              name="walkerslocation"
               placeholder="WALKER'S LOCATION"
               required
             />
@@ -79,7 +82,7 @@
           <div>
             <input
               type="text"
-              name="walkers_phone_number"
+              name="walkersphonenumber"
               placeholder="WALKER'S PHONE NUMBER"
               required
             />
