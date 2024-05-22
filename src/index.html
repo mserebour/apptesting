@@ -19,30 +19,28 @@
     <div class="form-container">
       <div class="form-section">
         <h2>Register Your Dog</h2>
-        <form id="dogRegistrationForm" action="/register_dog" method="POST">
+        <form
+          action="https://waqqly-web-app-functions.azurewebsites.net/api/createdog"
+          method="GET"
+        >
           <div>
             <label for="dogName">Dog's Name:</label>
-            <input type="text" id="dogName" name="dogName" required />
+            <input type="text" name="dogname" required />
           </div>
           <div>
             <label for="dogBreed">Dog's Breed:</label>
-            <input type="text" id="dogBreed" name="dogBreed" required />
+            <input type="text" name="dogbreed" required />
           </div>
           <div>
             <label for="dogOwner">Owner's Name:</label>
-            <input type="text" id="dogOwner" name="dogOwner" required />
+            <input type="text" name="ownersname" required />
           </div>
           <div>
             <label for="dogOwnerLocation">Owner's Location:</label>
-            <input
-              type="text"
-              id="dogOwnerLocation"
-              name="dogOwnerLocation"
-              required
-            />
+            <input type="text" name="ownersaddress" required />
           </div>
           <div>
-            <input type="submit" value="Register Dog" />
+            <button type="submit">Submit</button>
           </div>
         </form>
       </div>
