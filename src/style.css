@@ -19,7 +19,7 @@ header h1 {
 header .header-image {
     display: block;
     margin: 0 auto;
-    max-width: 50%;
+    max-width: 10%;
     height: auto;
 }
 
@@ -43,19 +43,14 @@ h2 {
     color: #333;
     font-size: 1.5em;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 form div {
     margin-bottom: 15px;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 500;
-}
-
-input[type="text"], input[type="number"], input[type="submit"] {
+input[type="text"] {
     width: calc(100% - 20px);
     padding: 10px;
     margin-top: 5px;
@@ -64,45 +59,32 @@ input[type="text"], input[type="number"], input[type="submit"] {
     font-size: 1em;
 }
 
-input[type="submit"] {
-    background-color: #4A90E2;
-    color: #fff;
+button[type="submit"], button[type="reset"] {
+    width: calc(50% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
     border: none;
+    border-radius: 5px;
+    font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-input[type="submit"]:hover {
-    background-color: #357ABD;
+button[type="submit"] {
+    background-color: #4A90E2;
+    color: #fff;
 }
 
-.registered-list {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 40px;
-}
-
-.registered-list h3 {
-    margin-top: 0;
+button[type="reset"] {
+    background-color: #f0f0f0;
     color: #333;
 }
 
-.registered-list ul {
-    list-style-type: none;
-    padding: 0;
+button[type="submit"]:hover {
+    background-color: #357ABD;
 }
 
-.registered-list li {
-    padding: 10px;
-    background-color: #f9f9f9;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    transition: background-color 0.3s;
-}
-
-.registered-list li:hover {
-    background-color: #e9e9e9;
+button[type="reset"]:hover {
+    background-color: #e0e0e0;
 }
