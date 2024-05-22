@@ -24,53 +24,69 @@
           method="GET"
         >
           <div>
-            <label for="dogName">Dog's Name:</label>
-            <input type="text" name="dogname" required />
+            <input type="text" name="dogname" placeholder="DOG NAME" required />
           </div>
           <div>
-            <label for="dogBreed">Dog's Breed:</label>
-            <input type="text" name="dogbreed" required />
+            <input
+              type="text"
+              name="dogbreed"
+              placeholder="DOG BREED"
+              required
+            />
           </div>
           <div>
-            <label for="dogOwner">Owner's Name:</label>
-            <input type="text" name="ownersname" required />
+            <input
+              type="text"
+              name="ownersname"
+              placeholder="OWNER'S NAME"
+              required
+            />
           </div>
           <div>
-            <label for="dogOwnerLocation">Owner's Location:</label>
-            <input type="text" name="ownersaddress" required />
+            <input
+              type="text"
+              name="ownersaddress"
+              placeholder="OWNER'S LOCATION"
+              required
+            />
           </div>
           <div>
             <button type="submit">Submit</button>
+            <button type="reset">Reset Form</button>
           </div>
         </form>
       </div>
 
       <div class="form-section">
         <h2>Register as a Dog Walker</h2>
-        <form
-          id="dogWalkerRegistrationForm"
-          action="/register_dog_walker"
-          method="POST"
-        >
+        <form action="/register_dog_walker" method="GET">
           <div>
-            <label for="walkerName">Walker's Name:</label>
-            <input type="text" id="walkerName" name="walkerName" required />
-          </div>
-          <div>
-            <label for="walkerLocation">Walker's Location:</label>
             <input
               type="text"
-              id="walkerLocation"
-              name="walkerLocation"
+              name="walkers_name"
+              placeholder="WALKER'S NAME"
               required
             />
           </div>
           <div>
-            <label for="walkerPhone">Walker's Phone Number:</label>
-            <input type="text" id="walkerPhone" name="walkerPhone" required />
+            <input
+              type="text"
+              name="walkers_location"
+              placeholder="WALKER'S LOCATION"
+              required
+            />
           </div>
           <div>
-            <input type="submit" value="Register Walker" />
+            <input
+              type="text"
+              name="walkers_phone_number"
+              placeholder="WALKER'S PHONE NUMBER"
+              required
+            />
+          </div>
+          <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset Form</button>
           </div>
         </form>
       </div>
