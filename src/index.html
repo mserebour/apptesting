@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waqq.ly</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dog Walker Finder</h1>
+      <img src="/static/dogWalker.png" alt="Dog Walker" class="header-image" />
+    </header>
+
+    <div class="form-container">
+      <div class="form-section">
+        <h2>Register Your Dog</h2>
+        <form id="dogRegistrationForm" action="/register_dog" method="POST">
+          <div>
+            <label for="dogName">Dog's Name:</label>
+            <input type="text" id="dogName" name="dogName" required />
+          </div>
+          <div>
+            <label for="dogBreed">Dog's Breed:</label>
+            <input type="text" id="dogBreed" name="dogBreed" required />
+          </div>
+          <div>
+            <label for="dogOwner">Owner's Name:</label>
+            <input type="text" id="dogOwner" name="dogOwner" required />
+          </div>
+          <div>
+            <label for="dogOwnerLocation">Owner's Location:</label>
+            <input
+              type="text"
+              id="dogOwnerLocation"
+              name="dogOwnerLocation"
+              required
+            />
+          </div>
+          <div>
+            <input type="submit" value="Register Dog" />
+          </div>
+        </form>
+      </div>
+
+      <div class="form-section">
+        <h2>Register as a Dog Walker</h2>
+        <form
+          id="dogWalkerRegistrationForm"
+          action="/register_dog_walker"
+          method="POST"
+        >
+          <div>
+            <label for="walkerName">Walker's Name:</label>
+            <input type="text" id="walkerName" name="walkerName" required />
+          </div>
+          <div>
+            <label for="walkerLocation">Walker's Location:</label>
+            <input
+              type="text"
+              id="walkerLocation"
+              name="walkerLocation"
+              required
+            />
+          </div>
+          <div>
+            <label for="walkerPhone">Walker's Phone Number:</label>
+            <input type="text" id="walkerPhone" name="walkerPhone" required />
+          </div>
+          <div>
+            <input type="submit" value="Register Walker" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
