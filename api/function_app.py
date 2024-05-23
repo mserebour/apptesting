@@ -14,7 +14,8 @@ def create_dog(req: functions.HttpRequest, documentForDog: functions.Out[functio
     owners_address = req.params.get('ownersaddress')
     if dog_name and dog_breed and owners_name and owners_address:
         documentForDog.set(functions.Document.from_dict({"id": id_for_dog, "dog_name": dog_name, "dog_breed": dog_breed, "owners_name": owners_name, "owners_address": owners_address}))
-        return functions.HttpResponse(status_code = 204)
+        success_message = f"Dog '{dog_name}' has been successfully registered!"
+        return functions.HttpResponse(success_message, status_code = 201)
     else: 
         return functions.HttpResponse(status_code = 400)
     
